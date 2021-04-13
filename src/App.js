@@ -1,5 +1,5 @@
-import name from "./assets/name.svg";
-import jj from "./assets/jj.svg";
+import name from "./assets/svg/name.svg";
+import jj from "./assets/images/jj.png";
 import "./App.css";
 
 function App() {
