@@ -1,8 +1,10 @@
+const theme = require('./src/tailwind/theme');
+
 module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: { ...theme},
   },
   variants: {
     extend: {},
