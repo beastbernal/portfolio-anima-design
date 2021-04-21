@@ -1,83 +1,50 @@
 import FullNameLogo from "./assets/svg/name.svg"
-import JJLogo from "./assets/images/jj.png"
+import JJFooter from "./assets/svg/jj_footer.svg"
 import Pattern from "./assets/svg/pattern.svg"
-import Titles from './components/Titles';
-import "./App.css"
+import ZeroAnima from "./assets/svg/zero_anima.svg"
 
+import GitHub from "./assets/svg/GitHub.svg"
+import Instagram from "./assets/svg/Instagram.svg"
+import FB from "./assets/svg/FB.svg"
+import LinkedIn from "./assets/svg/LinkedIn.svg"
+import Twitter from "./assets/svg/Twitter.svg"
+
+import JJLogo from "./assets/images/jj.png"
+import Titles from "./components/Titles"
+import "./App.css"
 
 function App() {
   return (
-    <div className="bg-fixed" style={{ 
-      backgroundImage: `url("${Pattern}")` 
-    }}>
-      <img src={JJLogo} className="fixed top-0 left-0" alt="jj" />
-      <div className="flex flex-col justify-items-center">
-        <div className="flex justify-center">
-          <img src={FullNameLogo} alt="name" className="h-1/4" />
-        </div>
-        <div className="container-sm mx-auto px-20">
-          <div className="grid grid-cols-3 gap-4">
-          <Titles/>
+    <>
+      <div
+        className="bg-fixed bg-repeat min-h-screen"
+        style={{
+          backgroundImage: `url("${Pattern}")`,
+        }}
+      >
+        <img src={JJLogo} className="absolute top-0 left-0 z-0" alt="jj" />
+        <div className="flex flex-col justify-items-center">
+          <div className="flex justify-center">
+            <img src={FullNameLogo} alt="name" className="h-1/4" />
           </div>
-
+          <Titles />
         </div>
       </div>
-      {/* <Parallax bgImage={name} strength={500}>
-        <div style={{ height: 500 }}>
-          <div style={insideStyles}>HTML inside the parallax</div>
-        </div>
-      </Parallax> */}
-      {/* <h2>| | |</h2>
-      <Parallax strength={500}>
-        <Background className="custom-bg">
-          <div
-            style={{
-              height: 2000,
-              width: 2000,
-              backgroundImage: "url('https://i.imgur.com/8CV5WAB.png')",
-            }}
-          />
-        </Background>
-        <div>
-          <br />
-          custom background component
-          <br />
-          <br />
-          custom background component
-          <br />
-          <br />
-          custom background component
-          <br />
-          <br />
-        </div>
-      </Parallax>
-      <div style={{ height: 500 }} />
-      <h2>{"\u2728"}</h2>
-      <Parallax
-        bgImage={name}
-        strength={200}
-        renderLayer={(percentage) => (
-          <div>
-            <div
-              style={{
-                position: "absolute",
-                background: `rgba(255, 125, 0, ${percentage * 1})`,
-                left: "50%",
-                top: "50%",
-                borderRadius: "50%",
-                transform: "translate(-50%,-50%)",
-                width: percentage * 500,
-                height: percentage * 500,
-              }}
-            />
+      <footer>
+        <div className="h-1 bg-gradient-to-r from-tertiary via-secondary to-primary"></div>
+        <div className="flex flex-col items-center justify-center bg-dark-grey z-50 h-full  pb-16">
+          <img src={JJFooter} alt="footer_logo" className="h-36 w-36 mt-10" />
+          <div className="flex flex-row items-center justify-center mt-10">
+            <img src={GitHub} alt="GitHub_logo" className="px-4" />
+            <img src={Instagram} alt="Instagram_logo" className="px-4" />
+            <img src={LinkedIn} alt="LinkedIn_logo" className="px-4" />
+            <img src={FB} alt="FB_logo" className="px-4" />
+            <img src={Twitter} alt="Twitter_logo" className="px-4" />
           </div>
-        )}
-      >
-        <div style={{ height: 500 }}>
-          <div style={insideStyles}>renderProp</div>
+          <img src={ZeroAnima} alt="zeroanima_logo" className="h-36 w-36 pt-10" />
         </div>
-      </Parallax> */}
-    </div>
+      </footer>
+    </>
   )
 }
 

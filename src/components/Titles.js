@@ -1,34 +1,35 @@
-import React from "react"
+import React from 'react'
+import TitleDetail from './TitleDetail';
 
 export const Titles = () => {
+  const charges = [
+    {
+      name: 'Senior Front End Developer',
+      opacity: 100,
+    },
+    {
+      name: 'Senior JS Developer',
+      opacity: 50,
+    },
+    {
+      name: 'Senior Fullstack Developer',
+      opacity: 50,
+    },
+    {
+      name: 'Front End Developer Architect',
+      opacity: 50,
+    },
+    {
+      name: 'Technical Lead',
+      opacity: 50,
+    },
+  ]
   return (
-    <>
-      <div className="flex flex-wrap content-center border-primary border-2 rounded-lg h-14 w-72 max-w-xs ">
-        <p className="text-primary text-xl font-normal text-center w-full">
-          Senior Front End Developer
-        </p>
-      </div>
-      <div className="flex flex-wrap content-center border-primary border-2 rounded-lg h-14 w-72 max-w-xs opacity-50">
-        <p className="text-primary text-xl font-normal text-center w-full">
-          Senior JS Developer
-        </p>
-      </div>
-      <div className="flex flex-wrap content-center border-primary border-2 rounded-lg h-14 w-72 max-w-xs opacity-50">
-        <p className="text-primary text-xl font-normal text-center w-full">
-          Senior Fullstack Developer
-        </p>
-      </div>
-      <div className="flex flex-wrap content-center border-primary border-2 rounded-lg h-14 w-72 max-w-xs opacity-50">
-        <p className="text-primary text-xl font-normal text-center w-full">
-          Front End Developer Architect
-        </p>
-      </div>
-      <div className="flex flex-wrap content-center border-primary border-2 rounded-lg h-14 w-72 max-w-xs opacity-50">
-        <p className="text-primary text-xl font-normal text-center w-full">
-          Technical Lead
-        </p>
-      </div>
-    </>
+    <div className="flex flex-wrap justify-center align-middle mx-10">      
+        {charges.map((charge) => (
+          <TitleDetail {...charge} key={charge.name} />
+        ))}
+    </div>
   )
 }
 
