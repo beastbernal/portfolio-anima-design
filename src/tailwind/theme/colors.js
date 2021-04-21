@@ -14,6 +14,9 @@ module.exports = {
 
       "dark-grey": "#212121",
       
+      "secondary-grey": "#383838",
+      
+
     },
   };
   

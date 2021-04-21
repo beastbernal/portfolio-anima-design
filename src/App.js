@@ -31,9 +31,13 @@ function App() {
         </div>
       </div>
       <footer>
+        
         <div className="h-1 bg-gradient-to-r from-tertiary via-secondary to-primary"></div>
         <div className="flex flex-col items-center justify-center bg-dark-grey z-50 h-full  pb-16">
-          <img src={JJFooter} alt="footer_logo" className="h-36 w-36 mt-10" />
+          <div className="h-40 w-3/6 bg-secondary-grey shadow-md flex flex-col items-center -mt-24 rounded-md ">
+
+          </div>
+          <img src={JJFooter} alt="footer_logo" className="h-36 w-36 mt-20" />
           <div className="flex flex-row items-center justify-center mt-10">
             <img src={GitHub} alt="GitHub_logo" className="px-4" />
             <img src={Instagram} alt="Instagram_logo" className="px-4" />
