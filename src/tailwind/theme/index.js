@@ -18,6 +18,6 @@ module.exports = {
     '90-full': '90vh',
   },
   backgroundImage: {
-    'hero-pattern': "url('./assets/svg/Pattern.svg')",
+    'hero-pattern': "url('./assets/svg/x-pattern.svg')",
   },
 };
