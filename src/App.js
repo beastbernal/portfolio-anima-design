@@ -1,6 +1,5 @@
 import FullNameLogo from "./assets/svg/name.svg"
 import JJFooter from "./assets/svg/jj_footer.svg"
-import Pattern from "./assets/svg/pattern.svg"
 import ZeroAnima from "./assets/svg/zero_anima.svg"
 
 import GitHub from "./assets/svg/GitHub.svg"
@@ -11,23 +10,20 @@ import Twitter from "./assets/svg/Twitter.svg"
 
 import JJLogo from "./assets/images/jj.png"
 import Titles from "./components/Titles"
+import Content from "./components/Content"
 import "./App.css"
 
 function App() {
   return (
     <>
-      <div
-        className="bg-fixed bg-repeat min-h-screen"
-        style={{
-          backgroundImage: `url("${Pattern}")`,
-        }}
-      >
+      <div className="min-h-screen min-w-min bg-hero-pattern flex flex-row justify-around ">
         <img src={JJLogo} className="absolute top-0 left-0 z-0" alt="jj" />
-        <div className="flex flex-col justify-items-center">
+        <div className="flex flex-col align-middle md:container">
           <div className="flex justify-center">
-            <img src={FullNameLogo} alt="name" className="h-1/4" />
+            <img src={FullNameLogo} alt="name" className="h-1/12 w-1/3" />
           </div>
           <Titles />
+          <Content/>
         </div>
       </div>
       <footer>
