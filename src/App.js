@@ -1,16 +1,18 @@
-import FullNameLogo from "./assets/svg/name.svg"
-import JJFooter from "./assets/svg/jj_footer.svg"
-import ZeroAnima from "./assets/svg/zero_anima.svg"
+import FullNameLogo from "assets/svg/name.svg"
+import JJFooter from "assets/svg/jj_footer.svg"
+import ZeroAnima from "assets/svg/zero_anima.svg"
 
-import GitHub from "./assets/svg/GitHub.svg"
-import Instagram from "./assets/svg/Instagram.svg"
-import FB from "./assets/svg/FB.svg"
-import LinkedIn from "./assets/svg/LinkedIn.svg"
-import Twitter from "./assets/svg/Twitter.svg"
+import GitHub from "assets/svg/GitHub.svg"
+import Instagram from "assets/svg/Instagram.svg"
+import FB from "assets/svg/FB.svg"
+import LinkedIn from "assets/svg/LinkedIn.svg"
+import Twitter from "assets/svg/Twitter.svg"
 
-import JJLogo from "./assets/images/jj.png"
-import Titles from "./components/Titles"
-import Content from "./components/Content"
+import JJLogo from "assets/images/jj.png"
+import Titles from "components/Titles"
+import Content from "components/Content"
+import ContactCard from "components/ContactCard"
+import DownloadCV from "components/DownloadCV"
 import "./App.css"
 
 function App() {
@@ -23,6 +25,7 @@ function App() {
             <img src={FullNameLogo} alt="name" className="h-1/12 w-1/3" />
           </div>
           <Titles />
+          <DownloadCV />
           <Content/>
         </div>
       </div>
@@ -30,9 +33,7 @@ function App() {
         
         <div className="h-1 bg-gradient-to-r from-tertiary via-secondary to-primary"></div>
         <div className="flex flex-col items-center justify-center bg-dark-grey z-50 h-full  pb-16">
-          <div className="h-40 w-3/6 bg-secondary-grey shadow-md flex flex-col items-center -mt-24 rounded-md ">
-
-          </div>
+          <ContactCard />
           <img src={JJFooter} alt="footer_logo" className="h-36 w-36 mt-20" />
           <div className="flex flex-row items-center justify-center mt-10">
             <img src={GitHub} alt="GitHub_logo" className="px-4" />

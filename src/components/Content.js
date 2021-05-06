@@ -3,7 +3,7 @@ import React from 'react'
 const Content = () => {
   return (
     <div className="md:container md:mx-auto">
-      <p className="text-primary">
+      <p className="text-primary mb-52 mt-20">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel efficitur
         lectus. Nullam imperdiet erat condimentum nibh bibendum ornare. Nam mattis
         accumsan tellus, ac fermentum turpis iaculis id. Vivamus bibendum nunc sed
